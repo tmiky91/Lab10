@@ -12,6 +12,15 @@ public class Author {
 		this.lastname = lastname;
 		this.firstname = firstname;
 	}
+	
+	
+
+	public Author(int id) {
+		super();
+		this.id = id;
+	}
+
+
 
 	public int getId() {
 		return id;
@@ -44,7 +53,7 @@ public class Author {
 
 	@Override
 	public String toString() {
-		return "Author [id=" + id + ", lastname=" + lastname + ", firstname=" + firstname + "]";
+		return id+" "+lastname+" "+firstname;
 	}
 
 	@Override
